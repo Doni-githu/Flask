@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Numbers</title>
+</head>
+<body>
+
+
+{% if nums %}
+<h1>Numbers are:</h1>
+<ul>
+    {% for num in nums %}
+    <li>{{ num }}</li>
+    {% endfor %}
+</ul>
+
+{% else %}
+    <h1>No Numbers</h1>
+
+{% endif %}
+
+</body>
+</html>
